@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frimps Fresh Pork | Quality Pork in Aburi, Pokrom</title>
+    <style>
+        :root {
+            --primary: #d93838;
+            --primary-dark: #b02626;
+            --accent: #25D366;
+            --dark: #222222;
+            --light: #fdfbfb;
+            --card-bg: #ffffff;
+            --border: #e0e0e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f7f7f7;
+            color: var(--dark);
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 2px solid var(--border);
+            padding: 20px 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            font-size: 2.5rem;
+            background: #ffebeb;
+            padding: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .logo-text h1 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo-text p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 8px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .price-box {
+            background: #fcf4f4;
+            border: 1px solid #ffd6d6;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .price-box h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .price-box .price {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: var(--primary-dark);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+
+        .total-display {
+            background: #eef9f2;
+            border: 1px solid #c7eed3;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .total-display span {
+            display: block;
+            font-size: 0.9rem;
+            color: #444;
+        }
+
+        .total-display strong {
+            font-size: 1.8rem;
+            color: #1b7a3e;
+        }
+
+        .btn-whatsapp {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: background 0.2s;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1eb956;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        @media (max-width: 480px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <span class="logo-icon">🐖</span>
+            <div class="logo-text">
+                <h1>Frimps Fresh Pork</h1>
+                <p>Premium Quality Pork • Aburi, Pokrom</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Pricing Card -->
+        <div class="card">
+            <h2>Our Pricing</h2>
+            <div class="pricing-grid">
+                <div class="price-box">
+                    <h3>🐖 Live Weight</h3>
+                    <div class="price">GH₵35 <small>/ kg</small></div>
+                </div>
+                <div class="price-box">
+                    <h3>🥩 Carcass</h3>
+                    <div class="price">GH₵60 <small>/ kg</small></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Order & Calculator Card -->
+        <div class="card">
+            <h2>Order & Price Calculator</h2>
+            <form id="orderForm">
+                
+                <div class="form-group">
+                    <label for="productType">Select Product Type</label>
+                    <select id="productType" onchange="calculateTotal()" required>
+                        <option value="35">🐖 Live Weight (GH₵35/kg)</option>
+                        <option value="60">🥩 Carcass (GH₵60/kg)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="weight">Weight (in kg)</label>
+                    <input type="number" id="weight" min="1" value="10" oninput="calculateTotal()" required>
+                </div>
+
+                <div class="total-display">
+                    <span>Estimated Total Cost</span>
+                    <strong id="totalPrice">GH₵350.00</strong>
+                </div>
+
+                <div class="form-group">
+                    <label for="fulfillment">Fulfillment Method</label>
+                    <select id="fulfillment" required>
+                        <option value="Delivery">🚚 Delivery</option>
+                        <option value="Farm Pickup (Aburi, Pokrom)">🏡 Farm Pickup (Aburi, Pokrom)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="customerName">Your Name</label>
+                    <input type="text" id="customerName" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="customerLocation">Delivery Address / Location</label>
+                    <input type="text" id="customerLocation" placeholder="e.g. Aburi, Madina, East Legon..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Additional Instructions (Optional)</label>
+                    <textarea id="notes" rows="2" placeholder="Special cuts, delivery time preferences, etc."></textarea>
+                </div>
+
+                <button type="button" class="btn-whatsapp" onclick="sendToWhatsApp()">
+                    📱 Send Order to WhatsApp
+                </button>
+            </form>
+        </div>
+
+        <!-- Location & Details Card -->
+        <div class="card">
+            <h2>Contact & Pickup Info</h2>
+            <ul class="info-list">
+                <li>🏡 <strong>Location:</strong> Aburi, Pokrom</li>
+                <li>📱 <strong>WhatsApp/Phone:</strong> 0244647847</li>
+                <li>🚚 <strong>Delivery:</strong> Available upon request</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script>
+        function calculateTotal() {
+            const pricePerKg = parseFloat(document.getElementById('productType').value);
+            const weight = parseFloat(document.getElementById('weight').value) || 0;
+            const total = pricePerKg * weight;
+            document.getElementById('totalPrice').innerText = 'GH₵' + total.toFixed(2);
+        }
+
+        function sendToWhatsApp() {
+            const productSelect = document.getElementById('productType');
+            const productText = productSelect.options[productSelect.selectedIndex].text;
+            const weight = document.getElementById('weight').value;
+            const total = document.getElementById('totalPrice').innerText;
+            const fulfillment = document.getElementById('fulfillment').value;
+            const name = document.getElementById('customerName').value;
+            const location = document.getElementById('customerLocation').value;
+            const notes = document.getElementById('notes').value;
+
+            if (!name || !location || !weight) {
+                alert('Please fill in your name, weight, and location before sending.');
+                return;
+            }
+
+            const message = 
+                `*NEW ORDER - FRIMPS FRESH PORK*\n\n` +
+                `👤 *Name:* ${name}\n` +
+                `🥩 *Item:* ${productText}\n` +
+                `⚖️ *Quantity:* ${weight} kg\n` +
+                `💰 *Estimated Total:* ${total}\n` +
+                `🚚 *Method:* ${fulfillment}\n` +
+                `📍 *Location:* ${location}\n` +
+                (notes ? `📝 *Notes:* ${notes}\n` : '') +
+                `\nPlease confirm availability and payment details.`;
+
+            const phone = "233244647847"; // Format with Ghana country code without '+'
+            const encodedMessage = encodeURIComponent(message);
+            
+            window.open(`https://wa.me/${phone}?text=${encodedMessage}`, '_blank');
+        }
+    </script>
+</body>
+</html>
