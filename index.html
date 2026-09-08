@@ -282,7 +282,8 @@
             <h2>Contact & Pickup Info</h2>
             <ul class="info-list">
                 <li>🏡 <strong>Location:</strong> Aburi, Pokrom</li>
-                <li>📱 <strong>WhatsApp/Phone:</strong> 0244647847</li>
+                <li>📱 <strong>Main Line:</strong> 0244647847</li>
+                <li>📱 <strong>Cc Line:</strong> 0555590608</li>
                 <li>🚚 <strong>Delivery:</strong> Available upon request</li>
             </ul>
         </div>
@@ -321,12 +322,14 @@
                 `🚚 *Method:* ${fulfillment}\n` +
                 `📍 *Location:* ${location}\n` +
                 (notes ? `📝 *Notes:* ${notes}\n` : '') +
-                `\nPlease confirm availability and payment details.`;
+                `\n📱 *Main Line:* 0244647847` +
+                `\n📱 *Cc Line:* 0555590608` +
+                `\n\nPlease confirm availability and payment details.`;
 
-            const phone = "233244647847"; // Format with Ghana country code without '+'
+            const primaryPhone = "233244647847";
             const encodedMessage = encodeURIComponent(message);
             
-            window.open(`https://wa.me/${phone}?text=${encodedMessage}`, '_blank');
+            window.open(`https://wa.me/${primaryPhone}?text=${encodedMessage}`, '_blank');
         }
     </script>
 </body>
